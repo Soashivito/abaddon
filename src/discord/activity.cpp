@@ -66,7 +66,7 @@ void from_json(const nlohmann::json &j, ActivityData &m) {
     JS_ON("url", m.URL);
     JS_D("created_at", m.CreatedAt);
     JS_O("timestamps", m.Timestamps);
-    JS_O("application_id", m.ApplicationID);
+    JS_ON("application_id", m.ApplicationID);
     JS_ON("details", m.Details);
     JS_ON("state", m.State);
     JS_ON("emoji", m.Emoji);
