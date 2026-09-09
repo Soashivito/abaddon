@@ -35,7 +35,7 @@ void from_json(const nlohmann::json &j, ChannelData &m) {
     JS_O("recipient_ids", m.RecipientIDs);
     JS_ON("icon", m.Icon);
     JS_O("owner_id", m.OwnerID);
-    JS_O("application_id", m.ApplicationID);
+    JS_ON("application_id", m.ApplicationID);
     JS_ON("parent_id", m.ParentID);
     JS_ON("last_pin_timestamp", m.LastPinTimestamp);
     JS_O("thread_metadata", m.ThreadMetadata);
